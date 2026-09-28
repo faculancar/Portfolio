@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="NivelGroup es una empresa constructora especializada en obras, reformas, ampliaciones y gestión integral de proyectos."
+    >
+
+    <meta
+        name="keywords"
+        content="NivelGroup, constructora, construcción, reformas, obras, Uruguay"
+    >
+
+    <meta name="author" content="NivelGroup">
+
+    <title>NivelGroup | Construcción y reformas</title>
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JavaScript -->
+    <script src="js/app.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Modal de política de calidad -->
+    <div
+        class="quality-modal"
+        id="quality-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="quality-modal-title"
+        aria-hidden="true"
+    >
+        <div class="quality-modal__backdrop" data-close-quality-modal></div>
+
+        <div class="quality-modal__content">
+
+            <button
+                class="quality-modal__close"
+                type="button"
+                aria-label="Cerrar política de calidad"
+                data-close-quality-modal
+            >
+                ×
+            </button>
+
+            <div class="quality-modal__header">
+                <span class="quality-modal__version">
+                    Versión 00
+                </span>
+
+                <p class="section-label">
+                    Sistema de Gestión de Calidad
+                </p>
+
+                <h2 id="quality-modal-title">
+                    Política de Calidad
+                </h2>
+            </div>
+
+            <div class="quality-modal__body">
+
+                <p>
+                    En Nivel Group, nos dedicamos a la construcción y a
+                    brindar servicios especializados.
+                </p>
+
+                <p>
+                    Contamos con un Sistema de Gestión de Calidad basado
+                    en la Norma ISO 9001:2015, con el objeto estandarizar
+                    y mejorar el control de nuestros procesos.
+                </p>
+
+                <p>
+                    Nos comprometemos a:
+                </p>
+
+                <ul class="quality-modal__list">
+                    <li>
+                        Entregar soluciones de alta calidad, seguras,
+                        sostenibles en el tiempo y que cumplan con los
+                        estándares de nuestros clientes.
+                    </li>
+
+                    <li>
+                        Garantizar un buen entorno de trabajo seguro,
+                        minimizando el impacto ambiental y fomentando
+                        buenas prácticas sostenibles en esta materia.
+                    </li>
+
+                    <li>
+                        Cumplir con la normativa vigente, tanto regulatoria
+                        como las asumidas contractualmente.
+                    </li>
+
+                    <li>
+                        Satisfacer las necesidades de nuestros clientes,
+                        a partir del compromiso de nuestro equipo de trabajo.
+                    </li>
+
+                    <li>
+                        Fortalecer nuestra cultura organización, tomando
+                        como base la mejora continua de nuestro Sistema
+                        de Gestión.
+                    </li>
+                </ul>
+
+                <div class="quality-modal__approval">
+                    <div>
+                        <span>Responsable de aprobación</span>
+                        <strong>Dirección: Gustavo Lanusse</strong>
+                    </div>
+
+                    <div>
+                        <span>Fecha</span>
+                        <strong>05/08/2025</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="quality-modal__footer">
+                <button
+                    class="button button--primary"
+                    type="button"
+                    data-close-quality-modal
+                >
+                    Entendido
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Barra de progreso del scroll -->
+    <div class="scroll-progress" aria-hidden="true">
+        <div class="scroll-progress__bar"></div>
+    </div>
+
+    <!-- Encabezado -->
+    <header class="header" id="header">
+        <div class="container header__container">
+
+            <a
+                href="#inicio"
+                class="logo"
+                aria-label="Ir al inicio de NivelGroup"
+            >
+                <span class="logo__main">NIVEL</span>
+                <span class="logo__secondary">GROUP</span>
+            </a>
+
+            <nav class="navigation" aria-label="Navegación principal">
+                <ul class="navigation__list">
+                    <li>
+                        <a class="navigation__link" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation__link" href="#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation__link" href="#servicios">
+                            Servicios
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation__link" href="#proyectos">
+                            Proyectos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="navigation__link" href="#proceso">
+                            Cómo trabajamos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#contacto" class="button button--header">
+                Contactanos
+            </a>
+
+            <!-- Botón del menú móvil -->
+            <button
+                class="menu-button"
+                type="button"
+                aria-label="Abrir menú"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- Menú para celulares -->
+        <div class="mobile-menu" id="mobile-menu">
+            <nav aria-label="Navegación móvil">
+                <ul class="mobile-menu__list">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proceso">Cómo trabajamos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Portada -->
+        <section class="hero" id="inicio">
+
+            <div class="hero__background" aria-hidden="true">
+                <img
+                    src="imagenes/hero-construccion2.jpg"
+                    alt=""
+                    class="hero__image parallax-image"
+                >
+            </div>
+
+            <div class="hero__overlay" aria-hidden="true"></div>
+
+            <div class="container hero__container">
+                <div class="hero__content">
+
+                    <p class="hero__eyebrow reveal">
+                        Construcción · Reformas · Gestión de obra
+                    </p>
+
+                    <h1 class="hero__title reveal">
+                        Construimos espacios
+                        <span>que perduran.</span>
+                    </h1>
+
+                    <p class="hero__description reveal">
+                        Desarrollamos proyectos residenciales y comerciales
+                        con planificación, calidad y atención personalizada.
+                    </p>
+
+                    <div class="hero__actions reveal">
+                        <a href="#servicios" class="button button--primary">
+                            Conocé nuestros servicios
+                        </a>
+
+                        <a href="#contacto" class="button button--secondary">
+                            Solicitar presupuesto
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <a
+                href="#nosotros"
+                class="scroll-indicator"
+                aria-label="Continuar hacia la siguiente sección"
+            >
+                <span>Descubrí más</span>
+                <span class="scroll-indicator__line"></span>
+            </a>
+
+        </section>
+
+        <!-- Presentación -->
+        <section class="about section" id="nosotros">
+            <div class="container about__container">
+
+                <div class="about__content">
+                    <p class="section-label reveal">
+                        Sobre NivelGroup
+                    </p>
+
+                    <h2 class="section-title reveal">
+                        Transformamos ideas en proyectos concretos.
+                    </h2>
+
+                    <p class="about__text reveal">
+                        En NivelGroup acompañamos cada proyecto desde la
+                        planificación inicial hasta la entrega final de la obra.
+                        Trabajamos con compromiso, comunicación constante y
+                        soluciones adaptadas a las necesidades de cada cliente.
+                    </p>
+
+                    <a href="#proceso" class="text-link reveal">
+                        Conocé nuestra forma de trabajar
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+                <div class="about__media reveal-image">
+                    <div class="image-wrapper">
+                        <img
+                            src="imagenes/equipo-nivelgroup.webp"
+                            alt="Equipo de NivelGroup trabajando en una obra"
+                            loading="lazy"
+                            class="parallax-image"
+                        >
+                    </div>
+
+                    <div class="about__badge">
+                        <strong>Compromiso</strong>
+                        <span>en cada etapa</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="services section" id="servicios">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label reveal">
+                            Nuestros servicios
+                        </p>
+
+                        <h2 class="section-title reveal">
+                            Soluciones integrales para cada proyecto.
+                        </h2>
+                    </div>
+
+                    <p class="section-description reveal">
+                        Nos ocupamos de cada etapa para ofrecer un proceso
+                        ordenado, eficiente y transparente.
+                    </p>
+                </div>
+
+                <div class="services__grid">
+
+                    <article class="service-card reveal">
+                        <span class="service-card__number">01</span>
+
+                        <div class="service-card__icon" aria-hidden="true">
+                            <span>⌂</span>
+                        </div>
+
+                        <h3>Construcción de viviendas</h3>
+
+                        <p>
+                            Desarrollo y ejecución de viviendas adaptadas
+                            a las necesidades de cada cliente.
+                        </p>
+
+                        <a href="#contacto" class="service-card__link">
+                            Consultar
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-card__number">02</span>
+
+                        <div class="service-card__icon" aria-hidden="true">
+                            <span>＋</span>
+                        </div>
+
+                        <h3>Reformas y ampliaciones</h3>
+
+                        <p>
+                            Renovación y transformación de espacios
+                            residenciales y comerciales.
+                        </p>
+
+                        <a href="#contacto" class="service-card__link">
+                            Consultar
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-card__number">03</span>
+
+                        <div class="service-card__icon" aria-hidden="true">
+                            <span>▦</span>
+                        </div>
+
+                        <h3>Obras comerciales</h3>
+
+                        <p>
+                            Construcción y acondicionamiento de oficinas,
+                            locales y espacios corporativos.
+                        </p>
+
+                        <a href="#contacto" class="service-card__link">
+                            Consultar
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <span class="service-card__number">04</span>
+
+                        <div class="service-card__icon" aria-hidden="true">
+                            <span>✓</span>
+                        </div>
+
+                        <h3>Gestión y dirección de obra</h3>
+
+                        <p>
+                            Coordinación, supervisión y seguimiento de cada
+                            etapa del proyecto.
+                        </p>
+
+                        <a href="#contacto" class="service-card__link">
+                            Consultar
+                            <span aria-hidden="true">↗</span>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyecto destacado -->
+        <section class="featured-project section">
+            <div class="container featured-project__container">
+
+                <div class="featured-project__media reveal-image">
+                    <img
+                        src="imagenes/imagen-proyecto.jpg"
+                        alt="Proyecto destacado realizado por NivelGroup"
+                        loading="lazy"
+                        class="parallax-image"
+                    >
+                </div>
+
+                <div class="featured-project__content">
+                    <p class="section-label reveal">
+                        Proyecto destacado
+                    </p>
+
+                    <h2 class="section-title reveal">
+                        Espacios diseñados para vivir mejor.
+                    </h2>
+
+                    <p class="reveal">
+                        Cada proyecto combina funcionalidad, estética y
+                        soluciones constructivas pensadas para durar.
+                    </p>
+
+                    <dl class="project-details reveal">
+                        <div>
+                            <dt>Tipo</dt>
+                            <dd>Proyecto residencial</dd>
+                        </div>
+
+                        <div>
+                            <dt>Servicio</dt>
+                            <dd>Construcción integral</dd>
+                        </div>
+
+                        <div>
+                            <dt>Ubicación</dt>
+                            <dd>Montevideo, Uruguay</dd>
+                        </div>
+                    </dl>
+
+                    <a href="#proyectos" class="button button--dark reveal">
+                        Ver proyectos
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Galería de proyectos -->
+        <section class="projects section" id="proyectos">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <p class="section-label reveal">
+                            Proyectos
+                        </p>
+
+                        <h2 class="section-title reveal">
+                            Nuestro trabajo habla por nosotros.
+                        </h2>
+                    </div>
+                </div>
+
+                <!-- Filtros -->
+                <div class="project-filters reveal" role="group" aria-label="Filtrar proyectos">
+                    <button
+                        class="project-filter is-active"
+                        type="button"
+                        data-filter="todos"
+                    >
+                        Todos
+                    </button>
+
+                    <button
+                        class="project-filter"
+                        type="button"
+                        data-filter="residencial"
+                    >
+                        Residencial
+                    </button>
+
+                    <button
+                        class="project-filter"
+                        type="button"
+                        data-filter="reformas"
+                    >
+                        Reformas
+                    </button>
+
+                    <button
+                        class="project-filter"
+                        type="button"
+                        data-filter="comercial"
+                    >
+                        Comercial
+                    </button>
+                </div>
+
+                <div class="projects__grid">
+
+                    <article
+                        class="project-card reveal"
+                        data-category="residencial"
+                    >
+                        <a href="#" class="project-card__link">
+                            <div class="project-card__image">
+                                <img
+                                    src="imagenes/proyecto-01.png"
+                                    alt="Proyecto residencial de NivelGroup"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="project-card__content">
+                                <div>
+                                    <p>Residencial</p>
+                                    <h3>Vivienda contemporánea</h3>
+                                </div>
+
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article
+                        class="project-card reveal"
+                        data-category="reformas"
+                    >
+                        <a href="#" class="project-card__link">
+                            <div class="project-card__image">
+                                <img
+                                    src="imagenes/proyecto-02.avif"
+                                    alt="Reforma realizada por NivelGroup"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="project-card__content">
+                                <div>
+                                    <p>Reforma</p>
+                                    <h3>Renovación integral</h3>
+                                </div>
+
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                    <article
+                        class="project-card reveal"
+                        data-category="comercial"
+                    >
+                        <a href="#" class="project-card__link">
+                            <div class="project-card__image">
+                                <img
+                                    src="imagenes/proyecto-03.jpg"
+                                    alt="Proyecto comercial de NivelGroup"
+                                    loading="lazy"
+                                >
+                            </div>
+
+                            <div class="project-card__content">
+                                <div>
+                                    <p>Comercial</p>
+                                    <h3>Espacio corporativo</h3>
+                                </div>
+
+                                <span aria-hidden="true">↗</span>
+                            </div>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Proceso de trabajo -->
+        <section class="process section" id="proceso">
+            <div class="container process__container">
+
+                <div class="process__heading">
+                    <p class="section-label reveal">
+                        Cómo trabajamos
+                    </p>
+
+                    <h2 class="section-title reveal">
+                        Un proceso claro de principio a fin.
+                    </h2>
+
+                    <p class="section-description reveal">
+                        Te acompañamos durante todo el proyecto para que
+                        siempre conozcas el estado y los próximos pasos.
+                    </p>
+                </div>
+
+                <ol class="process__list">
+
+                    <li class="process-step reveal">
+                        <span class="process-step__number">01</span>
+
+                        <div>
+                            <h3>Primera reunión</h3>
+                            <p>
+                                Conocemos tu idea, necesidades, objetivos
+                                y características del proyecto.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="process-step__number">02</span>
+
+                        <div>
+                            <h3>Evaluación y propuesta</h3>
+                            <p>
+                                Analizamos el alcance y presentamos una
+                                solución ajustada a tu proyecto.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="process-step__number">03</span>
+
+                        <div>
+                            <h3>Planificación</h3>
+                            <p>
+                                Definimos tiempos, recursos, etapas y
+                                condiciones de ejecución.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="process-step__number">04</span>
+
+                        <div>
+                            <h3>Ejecución</h3>
+                            <p>
+                                Coordinamos la obra con seguimiento y
+                                comunicación constante.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="process-step reveal">
+                        <span class="process-step__number">05</span>
+
+                        <div>
+                            <h3>Entrega final</h3>
+                            <p>
+                                Revisamos cada detalle antes de entregar
+                                el proyecto terminado.
+                            </p>
+                        </div>
+                    </li>
+
+                </ol>
+
+            </div>
+        </section>
+
+        <!-- Estadísticas -->
+        <section class="stats section" aria-label="Datos de NivelGroup">
+            <div class="container stats__container">
+
+                <div class="stat reveal">
+                    <strong class="stat__number" data-counter="5">0</strong>
+                    <span>Años de experiencia</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong class="stat__number" data-counter="35">0</strong>
+                    <span>Proyectos realizados</span>
+                </div>
+
+                <div class="stat reveal">
+                    <strong class="stat__number" data-counter="100">0</strong>
+                    <span>% de compromiso</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Llamado a la acción -->
+        <section class="cta section">
+            <div class="cta__background" aria-hidden="true">
+                <img
+                    src="imagenes/hero-construccionn.png"
+                    alt=""
+                    loading="lazy"
+                    class="parallax-image"
+                >
+            </div>
+
+            <div class="cta__overlay" aria-hidden="true"></div>
+
+            <div class="container cta__container">
+                <p class="section-label reveal">
+                    Empecemos a construir
+                </p>
+
+                <h2 class="reveal">
+                    ¿Tenés un proyecto en mente?
+                </h2>
+
+                <p class="reveal">
+                    Contanos tu idea y te ayudamos a convertirla en realidad.
+                </p>
+
+                <a href="#contacto" class="button button--light reveal">
+                    Solicitar presupuesto
+                </a>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact section" id="contacto">
+            <div class="container contact__container">
+
+                <div class="contact__information">
+                    <p class="section-label reveal">
+                        Contacto
+                    </p>
+
+                    <h2 class="section-title reveal">
+                        Hablemos de tu próximo proyecto.
+                    </h2>
+
+                    <p class="contact__description reveal">
+                        Completá el formulario o comunicate directamente
+                        con nuestro equipo.
+                    </p>
+
+                    <address class="contact__details reveal">
+                        <a href="tel:+59891490012">
+                            <span>Teléfono</span>
+                            +598 91 490 012
+                        </a>
+
+                        <a href="mailto:nivelgroup.contacto@gmail.com">
+                            <span>Correo</span>
+                            nivelgroup.contacto@gmail.com
+                        </a>
+
+                        <p>
+                            <span>Ubicación</span>
+                            Montevideo, Uruguay
+                        </p>
+                    </address>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+
+                    <div class="form-group">
+                        <label for="name">Nombre completo</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            required
+                        >
+                        <small class="form-error"></small>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                            >
+                            <small class="form-error"></small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                autocomplete="tel"
+                                required
+                            >
+                            <small class="form-error"></small>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Tipo de proyecto</label>
+
+                        <select id="project-type" name="projectType" required>
+                            <option value="">Seleccioná una opción</option>
+                            <option value="construccion">
+                                Construcción
+                            </option>
+                            <option value="reforma">
+                                Reforma o ampliación
+                            </option>
+                            <option value="comercial">
+                                Obra comercial
+                            </option>
+                            <option value="direccion">
+                                Dirección de obra
+                            </option>
+                            <option value="otro">
+                                Otro
+                            </option>
+                        </select>
+
+                        <small class="form-error"></small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Contanos sobre tu proyecto</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            required
+                        ></textarea>
+
+                        <small class="form-error"></small>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="button button--primary button--full"
+                    >
+                        Enviar consulta
+                    </button>
+
+                    <p class="form-status" role="status" aria-live="polite"></p>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer__container">
+
+            <div class="footer__main">
+
+                <a href="#inicio" class="logo logo--footer">
+                    <span class="logo__main">NIVEL</span>
+                    <span class="logo__secondary">GROUP</span>
+                </a>
+
+                <p>
+                    Construcción, reformas y gestión integral de proyectos.
+                </p>
+
+            </div>
+
+            <div class="footer__navigation">
+                <h2>Navegación</h2>
+
+                <ul>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proceso">Cómo trabajamos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h2>Contacto</h2>
+
+                <ul>
+                    <li>
+                        <a href="tel:+59891490012">
+                            +598 91 490 012
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:nivelgroup.contacto@gmail.com">
+                            nivelgroup.contacto@gmail.com
+                        </a>
+                    </li>
+
+                    <li>Montevideo, Uruguay</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container footer__bottom">
+            <p>
+                © <span id="current-year"></span> NivelGroup.
+                Todos los derechos reservados.
+            </p>
+
+            <a href="#inicio">
+                Volver arriba ↑
+            </a>
+        </div>
+    </footer>
+
+    <!-- Botón para volver a abrir la política -->
+    <button
+        class="quality-policy-button"
+        id="open-quality-modal"
+        type="button"
+        aria-haspopup="dialog"
+        aria-controls="quality-modal"
+    >
+        Política de Calidad
+    </button>
+
+    <!-- Botón flotante de WhatsApp -->
+    <a
+        href="https://wa.me/59891490012?text=Hola%20NivelGroup,%20quisiera%20realizar%20una%20consulta."
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar a NivelGroup por WhatsApp"
+    >
+        <span aria-hidden="true">WhatsApp</span>
+    </a>
+
+</body>
+</html>
