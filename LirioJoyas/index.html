@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es-UY">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lirio Joyas: piezas delicadas y atemporales para acompañarte todos los días.">
+  <meta name="theme-color" content="#F7F3EF">
+
+  <title>Lirio Joyas | Detalles que florecen contigo</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="inicio">
+    <div class="header-inner container">
+      <a href="#inicio" class="logo" aria-label="Lirio Joyas - Inicio">
+        <img src="imagenes/LogoLirio.png" alt="Lirio Joyas">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span class="sr-only">Abrir menú</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+        <a href="#destacadas">Destacadas</a>
+        <a href="#collares">Collares</a>
+        <a href="#pulseras">Pulseras</a>
+        <a href="#pendientes">Pendientes</a>
+        <a href="#nosotras">Sobre Lirio</a>
+        <a href="#cuidados">Cuidados</a>
+        <a class="nav-contact" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Joyas delicadas · Hechas para vos</p>
+
+        <h1 id="hero-title">
+          Pequeños detalles que <em>florecen</em> contigo.
+        </h1>
+
+        <p class="hero-text">
+          Piezas atemporales para acompañarte en lo cotidiano y hacer especial cada momento.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#destacadas">
+            Ver colección
+          </a>
+
+          <a class="text-link" href="#nosotras">
+            Conocé Lirio
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="imagenes/collares/corazon2.jpeg" alt="Collar corazón Lirio">
+      </div>
+
+      <div class="hero-flower flower-badge" aria-hidden="true">
+        <img src="imagenes/FlorLirio.png" alt="">
+      </div>
+    </section>
+
+    <!-- DESTACADAS -->
+    <section class="section featured" id="destacadas" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-heading section-heading--center">
+          <div>
+            <p class="eyebrow">Las favoritas</p>
+            <h2 id="featured-title">Las más solicitadas</h2>
+          </div>
+
+          <p>Cuatro de las piezas favoritas de Lirio.</p>
+        </div>
+
+        <div class="product-grid" id="featured-grid"></div>
+
+        <div class="center-action">
+          <a class="button button-outline" href="#collares">
+            Ver todos los collares
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLLARES -->
+    <section class="section necklaces" id="collares" aria-labelledby="necklaces-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Colección Lirio</p>
+            <h2 id="necklaces-title">Nuestros collares</h2>
+          </div>
+
+          <p>
+            Descubrí nuestra selección y encontrá ese detalle que se siente hecho para vos.
+          </p>
+        </div>
+
+        <div class="product-grid catalog-grid" id="necklace-grid"></div>
+      </div>
+    </section>
+
+    <!-- PULSERAS -->
+    <section class="section bracelets catalog-section" id="pulseras" aria-labelledby="bracelets-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Colección Lirio</p>
+            <h2 id="bracelets-title">Nuestras pulseras</h2>
+          </div>
+
+          <p>
+            Detalles delicados para acompañarte todos los días y combinar con tus piezas favoritas.
+          </p>
+        </div>
+
+        <div class="product-grid catalog-grid" id="bracelet-grid"></div>
+      </div>
+    </section>
+
+    <!-- PENDIENTES -->
+    <section class="section earrings catalog-section catalog-section--light" id="pendientes" aria-labelledby="earrings-title">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Colección Lirio</p>
+            <h2 id="earrings-title">Nuestros pendientes</h2>
+          </div>
+
+          <p>
+            Piezas sutiles y versátiles para sumar un pequeño detalle a cada look.
+          </p>
+        </div>
+
+        <div class="product-grid catalog-grid" id="earring-grid"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE LIRIO -->
+    <section class="brand-story" id="nosotras" aria-labelledby="story-title">
+      <div class="story-image">
+        <img src="imagenes/collares/cruz2.jpeg" alt="Collar cruz Lirio">
+      </div>
+
+      <div class="story-copy">
+        <div class="flower-badge story-flower" aria-hidden="true">
+          <img src="imagenes/FlorLirio.png" alt="">
+        </div>
+
+        <p class="eyebrow">Nuestra esencia</p>
+
+        <h2 id="story-title">
+          Detalles que guardan <em>momentos.</em>
+        </h2>
+
+        <p>
+          En Lirio creemos que una joya puede ser mucho más que un accesorio: puede recordarte una historia, una persona o una versión de vos misma.
+        </p>
+
+        <p>
+          Creamos una selección delicada y versátil, pensada para acompañarte todos los días.
+        </p>
+
+        <a class="text-link" href="#contacto">
+          Conocé nuestra historia
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CUIDADOS -->
+    <section class="section care container" id="cuidados" aria-labelledby="care-title">
+      <div class="section-heading section-heading--center">
+        <div>
+          <p class="eyebrow">Mimalas siempre</p>
+          <h2 id="care-title">Cuidá tus joyas</h2>
+        </div>
+
+        <p>
+          Pequeños hábitos para que tus piezas conserven su brillo por más tiempo.
+        </p>
+      </div>
+
+      <div class="care-grid">
+        <article>
+          <span aria-hidden="true">◌</span>
+          <h3>Evitá el agua</h3>
+          <p>Retiralas antes de bañarte, nadar o hacer ejercicio.</p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">✧</span>
+          <h3>Último detalle</h3>
+          <p>Colocalas después del perfume, las cremas y el maquillaje.</p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">◇</span>
+          <h3>Guardalas bien</h3>
+          <p>Mantenelas separadas, en un lugar seco y protegido.</p>
+        </article>
+
+        <article>
+          <span aria-hidden="true">♡</span>
+          <h3>Mucho cariño</h3>
+          <p>Limpialas suavemente con un paño seco y sin químicos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="social" id="contacto" aria-labelledby="social-title">
+      <div class="container social-inner">
+        <div class="social-copy">
+          <p class="eyebrow">Sigamos conectadas</p>
+
+          <h2 id="social-title">
+            Un poquito de Lirio, todos los días.
+          </h2>
+
+          <p>
+            Descubrí novedades, inspiración y las últimas piezas en nuestras redes.
+          </p>
+
+          <div class="social-actions">
+            <a
+              class="button button-primary"
+              href="https://www.instagram.com/lirio.joyas_/"
+              target="_blank"
+              rel="noopener"
+            >
+              Ver Instagram
+            </a>
+
+            <a
+              class="text-link"
+              href="https://wa.me/59893598391"
+              target="_blank"
+              rel="noopener"
+            >
+              Escribinos por WhatsApp
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="instagram-grid" aria-label="Galería de Instagram">
+          <img src="imagenes/foto1.png" alt="Lirio Joyas">
+          <img src="imagenes/collares/piedra3.jpeg" alt="Collar Lirio">
+          <img src="imagenes/collares/corazon3.jpeg" alt="Collar corazón Lirio">
+          <img src="imagenes/collares/cruz1.jpeg" alt="Collar cruz Lirio">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="footer-logo" href="#inicio" aria-label="Volver al inicio">
+        <img src="imagenes/LogoLirio.png" alt="Lirio Joyas">
+      </a>
+
+      <p>
+        Pequeños detalles que florecen contigo.
+      </p>
+
+      <div class="footer-links">
+        <a
+          href="https://www.instagram.com/lirio.joyas_/"
+          target="_blank"
+          rel="noopener"
+        >
+          Instagram
+        </a>
+
+        <a
+          href="https://wa.me/59893598391"
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+      </div>
+
+      <small>
+        © <span id="current-year"></span> Lirio Joyas. Todos los derechos reservados.
+      </small>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Cerrar imagen">
+      ×
+    </button>
+
+    <button class="lightbox-arrow lightbox-arrow--prev" type="button" aria-label="Foto anterior">
+      ‹
+    </button>
+
+    <img class="lightbox-image" src="" alt="">
+
+    <button class="lightbox-arrow lightbox-arrow--next" type="button" aria-label="Foto siguiente">
+      ›
+    </button>
+
+    <span class="lightbox-count"></span>
+  </div>
+</body>
+</html>
